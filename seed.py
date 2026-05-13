@@ -27,7 +27,7 @@ DEMO_SUPPLIERS = [
         "gst_filings_on_time": 12,
         "director_changes_12m": 0,
         "reviews": [
-            {"buyer_name": "Razorpay Capital", "rating": 5, "comment": "Reliable, fast invoicing.", "on_time_delivery": True, "dispute": False},
+            {"buyer_name": "TradeFinance Capital", "rating": 5, "comment": "Reliable, fast invoicing.", "on_time_delivery": True, "dispute": False},
             {"buyer_name": "Flipkart B2B", "rating": 4, "comment": "Good quality, occasional delays.", "on_time_delivery": True, "dispute": False},
             {"buyer_name": "Tata 1mg", "rating": 5, "comment": "Consistent partner.", "on_time_delivery": True, "dispute": False},
         ],

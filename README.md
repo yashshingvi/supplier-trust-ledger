@@ -1,6 +1,6 @@
 # Supplier Trust Ledger (STL) — POC
 
-An append-only, AI-augmented ledger for verifying B2B suppliers and producing explainable trust scores. Built from the [Razorpay Fix My Itch](https://razorpay.com/m/fix-my-itch/) problem: *"Why can't businesses verify new suppliers before purchasing?"*
+An append-only, AI-augmented ledger for verifying B2B suppliers and producing explainable trust scores. Solving the problem: *"Why can't businesses verify new suppliers before purchasing?"*
 
 See [PLAN.md](./PLAN.md) for the full product/architecture rationale (640 lines — architecture diagrams, DB schemas, ML approach, risk matrix, and 6-phase roadmap).
 

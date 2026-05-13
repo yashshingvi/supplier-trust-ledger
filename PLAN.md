@@ -31,7 +31,7 @@ The Supplier Trust Ledger (STL) is a system of record that:
 | EcoVadis | ESG/sustainability scoring | Single dimension; survey-driven |
 | Refinitiv World-Check | Sanctions/PEP/adverse media | No financial/operational signal |
 | CreditSafe / CRIF / Experian | Credit/financial risk | No fraud-graph or doc verification |
-| Razorpay RBN, Khatabook, OkCredit | India SMB-native | Limited authoritative-source integration |
+| Khatabook, OkCredit, Vyapar | India SMB-native | Limited authoritative-source integration |
 | Persona / Trulioo / Onfido | KYB doc verification | Stateless; no longitudinal ledger |
 | HyperVerge / Signzy / Karza / IDfy | Indian KYB APIs | Per-call utilities, not a system of record |
 
@@ -584,7 +584,7 @@ Assumes 2 engineers + part-time PM/designer. Calendar weeks.
 2. Indian-only for POC, or are we serving cross-border (DUNS, EIN) day one?
 3. Do we self-host LLM (cost) or stay on Anthropic API (speed)? Recommend the latter for POC.
 4. Are GSTN/MCA direct integrations on the table, or do we go via an aggregator for the POC?
-5. Is there a Razorpay-internal payment-event stream we can subscribe to for the behavioral features?
+5. Is there a payment-event stream we can subscribe to for the behavioral features?
 
 ---
 
