@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supplier Trust Ledger</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">STL</span>
+    <div>
+      <h1>Supplier Trust Ledger</h1>
+      <p class="tagline">Append-only ledger · Explainable trust scoring · POC</p>
+    </div>
+  </div>
+  <div class="topbar-actions">
+    <button id="btn-new-supplier" class="btn primary">+ Onboard supplier</button>
+  </div>
+</header>
+
+<main>
+  <section class="filters">
+    <input id="search" type="search" placeholder="Search by name..." />
+    <select id="band-filter">
+      <option value="">All bands</option>
+      <option value="excellent">Excellent</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <select id="sort">
+      <option value="score-desc">Score: high → low</option>
+      <option value="score-asc">Score: low → high</option>
+      <option value="name">Name (A–Z)</option>
+    </select>
+    <div class="counts" id="counts"></div>
+  </section>
+
+  <section id="cards" class="cards"></section>
+</main>
+
+<!-- Supplier detail drawer -->
+<aside id="drawer" class="drawer hidden">
+  <div class="drawer-inner">
+    <button class="drawer-close" id="drawer-close">×</button>
+    <div id="drawer-content"></div>
+  </div>
+</aside>
+<div id="drawer-backdrop" class="drawer-backdrop hidden"></div>
+
+<!-- Onboard modal -->
+<div id="onboard-modal" class="modal hidden">
+  <div class="modal-card">
+    <h2>Onboard new supplier</h2>
+    <form id="onboard-form">
+      <label>Legal name<input name="legal_name" required /></label>
+      <label>Display name<input name="display_name" /></label>
+      <div class="row">
+        <label>PAN<input name="pan" placeholder="AABCA1234C" /></label>
+        <label>GSTIN<input name="gstin" placeholder="29AABCA1234C1Z5" /></label>
+      </div>
+      <div class="row">
+        <label>CIN<input name="cin" placeholder="U31900KA2014PTC123456" /></label>
+        <label>Category<input name="category" placeholder="Electronics" /></label>
+      </div>
+      <div class="row">
+        <label>Address<input name="address" /></label>
+        <label>Pincode<input name="pincode" /></label>
+      </div>
+      <div class="row">
+        <label>Incorporated on<input name="incorporated_on" type="date" /></label>
+        <label>GST registered on<input name="gst_registered_on" type="date" /></label>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn ghost" id="onboard-cancel">Cancel</button>
+        <button type="submit" class="btn primary">Onboard</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
